@@ -4,21 +4,18 @@ import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { enableScreens } from "react-native-screens";
+
 import Homepage from "./../pages/Homepage";
 import Cart from "./../pages/Cart";
 import Login from "./Login";
 import Signup from "./Signup";
+import StackNavigator from "./StackNavigator";
 
 const Tab = createBottomTabNavigator();
-const Stack = createNativeStackNavigator();
 
 const MainContainer = () => {
   return (
     <NavigationContainer>
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Signup" component={Signup} />
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
@@ -37,7 +34,7 @@ const MainContainer = () => {
           tabBarInactiveTintColor: "gray",
         })}
       >
-        <Tab.Screen name="Home" component={Homepage} />
+        <Tab.Screen name="Home" component={StackNavigator} />
         <Tab.Screen name="Cart" component={Cart} />
       </Tab.Navigator>
     </NavigationContainer>
