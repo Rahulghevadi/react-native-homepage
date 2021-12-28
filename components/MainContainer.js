@@ -5,11 +5,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-import Homepage from "./../pages/Homepage";
 import Cart from "./../pages/Cart";
+
+import HomeStackNavigator from "./HomeStackNavigator";
 import Login from "./Login";
-import Signup from "./Signup";
-import StackNavigator from "./StackNavigator";
+import LoginStackNavigator from "./LoginStackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -21,10 +21,12 @@ const MainContainer = () => {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === "Home") {
+            if (route.name === "home") {
               iconName = focused ? "home" : "home-outline";
             } else if (route.name === "Cart") {
               iconName = focused ? "cart" : "cart-outline";
+            } else if (route.name === "login") {
+              iconName = focused ? "log-in-outline" : "log-in-outline";
             }
 
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -34,8 +36,9 @@ const MainContainer = () => {
           tabBarInactiveTintColor: "gray",
         })}
       >
-        <Tab.Screen name="Home" component={StackNavigator} />
+        <Tab.Screen name="home" component={HomeStackNavigator} />
         <Tab.Screen name="Cart" component={Cart} />
+        <Tab.Screen name="login" component={LoginStackNavigator} />
       </Tab.Navigator>
     </NavigationContainer>
   );
