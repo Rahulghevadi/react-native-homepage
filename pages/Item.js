@@ -71,21 +71,20 @@ class Item extends Component {
                 <Icon.Button
                     name="remove"
                     size={25}
-                    color='black'
+                    color='#fff'
                     backgroundColor='#fff'
-                    style={{ borderRadius: 15, backgroundColor: '#bbb', height: 40, width: 40 }}
+                    style={{ borderRadius: 15, backgroundColor: 'red', height: 40, width: 40, marginHorizontal: 15, }}
                     iconStyle={{ marginRight: 0 }}
                 />
 
-                <Text>{item.amountTaken}</Text>
+                <Text style={{ justifyContent: 'center', }}>{item.amountTaken}</Text>
 
                 <Icon.Button
                     name="add"
                     size={25}
-                    color='black'
-                    style='bold'
+                    color='white'
                     backgroundColor='#fff'
-                    style={{ borderRadius: 15, backgroundColor: '#bbb', height: 40, width: 40 }}
+                    style={{ borderRadius: 15, backgroundColor: 'blue', height: 40, width: 40, marginHorizontal: 15, }}
                     iconStyle={{ marginRight: 0 }}
                 />
 
@@ -111,10 +110,11 @@ const styles = {
         flex: 1,
         borderBottomWidth: 1,
         borderColor: '#e2e2e2',
-        padding: 10,
+        // padding: 10,
         paddingLeft: 15,
         backgroundColor: '#fff',
         marginTop: 10,
+        // marginRight: 10,
     },
     lastItemStyle: {
         flexDirection: 'row',
