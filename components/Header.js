@@ -9,20 +9,25 @@ import {
   SafeAreaView,
 } from "react-native";
 
-import Icon from "./Icon.png";
+import IconLogo from "./IconLogo.png";
 import SearchInput from "./SearchInput";
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 const Header = ({ navigation }) => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
         <View>
-          <Image source={Icon} style={styles.icon} />
+          <Image source={IconLogo} style={styles.icon} />
         </View>
         <View>
           <SearchInput />
         </View>
-        <Button onPress={() => navigation.navigate("Login")} title="Login" />
+        <Icon name="shopping-cart" size={30} color="#900" onPress={
+          () => navigation.navigate('Cart')
+        } />
+
       </View>
     </SafeAreaView>
   );
@@ -34,9 +39,10 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     display: "flex",
-    backgroundColor: "white",
+    // backgroundColor: "#20b2aa",
     height: 100,
     flexDirection: "row",
+    paddingTop: 50,
     padding: 20,
     marginTop: 10,
     alignItems: "center",

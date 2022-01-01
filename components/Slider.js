@@ -58,9 +58,11 @@ export default Slider;
 
 const styles = StyleSheet.create({
   Container: {
-    width: "100%",
+    width: "auto",
     height: "35%",
     marginTop: 10,
+    margin: 10,
+    borderRadius: 10,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -68,6 +70,7 @@ const styles = StyleSheet.create({
     shadowOffset: {
       width: 0,
       height: 2,
+      backgroundColor: 'rgba(101, 92, 92, 0.91)',
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,

@@ -19,5 +19,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#f6f6f6",
     padding: 3,
+    borderRadius: 10,
   },
 });

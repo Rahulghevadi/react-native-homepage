@@ -1,11 +1,14 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, ImageBackground } from "react-native";
 import { TextInput, Button } from "react-native-paper";
+import ShowHide from "./ShowHide";
 
+
+const image = { uri: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' }
 export default function Signup({ navigation }) {
   return (
-    // <ImageBackground style={styles.image} source={require('')} resizeMode="cover">
-    <View style={styles.signUpContainer}>
+    <ImageBackground style={styles.image} source={image} resizeMode="cover">
+      <View style={styles.signUpContainer}>
       <TextInput style={styles.row1} mode="outlined" label="Enter Name" />
       <TextInput
         style={styles.row1}
@@ -13,41 +16,49 @@ export default function Signup({ navigation }) {
         label="Enter Phone Number"
       />
       <TextInput style={styles.row1} mode="outlined" label="Enter Email" />
-      <TextInput
+        <TextInput
         style={styles.row1}
         mode="outlined"
-        secureTextEntry
+          secureTextEntry={true}
         label="Password"
         right={<TextInput.Icon name="eye" />}
         // placeholder="Enter Password"
-      />
+        />
       <Button
         style={{ margin: 10 }}
         mode="contained"
-        onPress={() => navigation.navigate("Login")}
+          onPress={() => navigation.navigate("LoginPage")}
       >
         Signup
       </Button>
     </View>
-    // </ImageBackground>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
   signUpContainer: {
-    backgroundColor: `#deb887`,
+    backgroundColor: `rgba(101, 92, 92, 0.91)`,
+    padding: 10,
+    // flex: 1,
+    borderRadius: 15,
     alignItems: "center",
     justifyContent: "center",
+  },
+  image: {
+
+    height: 'auto',
+    width: 'auto',
     flex: 1,
-    padding: 30,
-    borderRadius: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+
   },
   row1: {
-    height: 40,
     width: 300,
-    borderColor: "blue",
-    // borderWidth: 20,
-    borderRadius: 10,
-    // margin: 10,
+    height: 50,
+    marginHorizontal: 25,
+    fontSize: 16,
+    borderRadius: 25,
   },
 });

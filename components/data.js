@@ -3,7 +3,7 @@ const data = [
     id: 1,
     imgUrl:
       "https://image.shutterstock.com/image-photo/red-apple-fruit-leaf-isolated-260nw-203589940.jpg",
-    info: "Are you hungry? Do you Like eating?",
+    info: "Are you hungry? Do You Like Eating?",
   },
   {
     id: 2,
