@@ -38,7 +38,7 @@ const Slider = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.slider}>
-        <View>
+        <View styale={{ borderRadius: 15, }}>
           <Image source={{ uri: imgUrl }} style={styles.image}></Image>
         </View>
         <View style={styles.info}>
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    backgroundColor: "white",
+    backgroundColor: "#F4F48F",
   },
 
   slider: {
@@ -89,6 +89,7 @@ const styles = StyleSheet.create({
     width: 125,
   },
   image: {
+    borderRadius: 15,
     width: 130,
     height: 130,
   },

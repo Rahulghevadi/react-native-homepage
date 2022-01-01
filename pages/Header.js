@@ -11,7 +11,7 @@ const Header = () => {
             <Text style={{ fontSize: 18 }}>My Cart</Text>
             <SearchInput />
             <View>
-                <Text style={{ paddingLeft: 15, }} >{data1.length}</Text>
+                <Text style={{ paddingLeft: 15, backgroundColor: 'white', borderRadius: 20, }} >{data1.length}</Text>
                 <Icon name="cart" size={30} color={'brown'} style={{ marginRight: 8 }} />
 
             </View>

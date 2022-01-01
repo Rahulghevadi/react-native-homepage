@@ -13,14 +13,14 @@ const Maincontent = ({ navigation }) => {
         <View style={styles.list} >
           <Image 
             source={Fruits}
-            style={{ width: 120, height: 110, borderRadius: 5 }}
+            style={{ width: 150, height: 120, borderRadius: 15, }}
           />
           <Text onPress={() => navigation.navigate("Fruits")} style={{ fontSize: 20 }}>Fruits </Text>
         </View>
         <View style={styles.list}>
           <Image
             source={Vegetables}
-            style={{ width: 120, height: 110, borderRadius: 5 }}
+            style={{ width: 150, height: 120, borderRadius: 15, }}
           />
           <Text style={{ fontSize: 20 }}>Vegetables </Text>
         </View>
@@ -50,11 +50,12 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
-    backgroundColor: "white",
+    backgroundColor: "#F4F48F",
     position: "relative",
   },
   itemcontainer: {
     flexDirection: "row",
+    borderRadius: 10,
     alignItems: "center",
     justifyContent: "space-around",
   },
@@ -68,10 +69,11 @@ const styles = StyleSheet.create({
     shadowOffset: {
       width: 0,
       height: 2,
+      borderRadius: 15,
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-
+    borderRadius: 15,
     elevation: 5,
     bottom: 30,
     position: "relative",

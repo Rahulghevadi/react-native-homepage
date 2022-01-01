@@ -51,6 +51,7 @@ class Item extends Component {
             imageStyle,
             textStyle,
             counterStyle,
+            itemsContainer,
             priceStyle } = styles;
 
         return (<View>
@@ -70,21 +71,22 @@ class Item extends Component {
             <View style={counterStyle}>
                 <Icon.Button
                     name="remove"
-                    size={25}
+                    size={15}
                     color='#fff'
                     backgroundColor='#fff'
-                    style={{ borderRadius: 15, backgroundColor: 'red', height: 40, width: 40, marginHorizontal: 15, }}
+                    style={{ backgroundColor: '#B8B8B2', height: 35, width: 35, borderWidth: 2, borderColor: 'gray', }}
                     iconStyle={{ marginRight: 0 }}
                 />
-
-                <Text style={{ justifyContent: 'center', }}>{item.amountTaken}</Text>
+                <View style={itemsContainer} >
+                    <Text >{item.amountTaken}</Text>
+                </View>
 
                 <Icon.Button
                     name="add"
-                    size={25}
-                    color='white'
+                    size={15}
+                    color='black'
                     backgroundColor='#fff'
-                    style={{ borderRadius: 15, backgroundColor: 'blue', height: 40, width: 40, marginHorizontal: 15, }}
+                    style={{ backgroundColor: '#B8B8B2', height: 35, width: 35, borderWidth: 2, borderColor: 'gray', }}
                     iconStyle={{ marginRight: 0 }}
                 />
 
@@ -109,11 +111,12 @@ const styles = {
         flexDirection: 'row',
         flex: 1,
         borderBottomWidth: 1,
-        borderColor: '#e2e2e2',
-        // padding: 10,
+        borderColor: '#fff',
+        padding: 10,
         paddingLeft: 15,
         backgroundColor: '#fff',
-        marginTop: 10,
+        marginTop: 20,
+
         // marginRight: 10,
     },
     lastItemStyle: {
@@ -122,31 +125,38 @@ const styles = {
         padding: 10,
         paddingLeft: 15,
         backgroundColor: '#fff',
-        marginTop: 10,
+        marginTop: 20,
     },
     imageStyle: {
+        borderRadius: 10,
         width: 150,
         height: 150,
         marginRight: 20
     },
     textStyle: {
         flex: 2,
-        // justifyContent: 'center'
     },
     priceStyle: {
-        // backgroundColor: '#ddd',
-        // width: ,
-        // alignItems: 'center',
         marginTop: 20,
-        borderRadius: 3
     },
     counterStyle: {
         flex: 1,
         flexDirection: 'row',
-        // justifyContent: 'space-around',
+        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#fff',
-    }
+    },
+    itemsContainer: {
+        height: 35,
+        width: 35,
+        justifyContent: 'center',
+        backgroundColor: '#EEEEE1',
+        alignItems: 'center',
+        borderWidth: 2,
+        borderColor: '#B8B8B2',
+
+
+    },
 };
 
 export default Item;
