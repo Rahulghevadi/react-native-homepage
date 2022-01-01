@@ -1,13 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 const TotalComponent = () => {
-    const { containerStyle, goodsStyle, totalStyle } = styles;
+    const { containerStyle, totalStyle } = styles;
     return (
         <View style={containerStyle}>
-
-
             <View style={totalStyle}>
                 <Text>Total  </Text>
                 <Text>Rs.300/-</Text>
