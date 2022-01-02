@@ -7,7 +7,7 @@ const Maincontent = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.text}>
-        <Text style={{ fontSize: 20 }}>Catogeries</Text>
+        <Text style={{ fontSize: 25, color: "white", }}>Catogeries</Text>
       </View>
       <View style={styles.itemcontainer}>
         <View style={styles.list} >
@@ -34,10 +34,10 @@ export default Maincontent;
 const styles = StyleSheet.create({
   container: {
     width: "auto",
-    height: "46%",
+    height: "45%",
     margin: 10,
     borderRadius: 10,
-    marginTop: 10,
+    marginTop: 0,
     display: "flex",
     justifyContent: "space-around",
     shadowColor: "#000",
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
-    backgroundColor: "#F4F48F",
+    backgroundColor: "brown",
     position: "relative",
   },
   itemcontainer: {

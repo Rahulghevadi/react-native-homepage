@@ -34,7 +34,7 @@ const Slider = () => {
     <View style={styles.Container}>
       <View style={{ paddingLeft: 10 }}>
         <TouchableOpacity onPress={preBtnHandle}>
-          <AntDesign name="left" size={24} color="black" />
+          <AntDesign name="left" size={24} color="white" />
         </TouchableOpacity>
       </View>
       <View style={styles.slider}>
@@ -42,12 +42,12 @@ const Slider = () => {
           <Image source={{ uri: imgUrl }} style={styles.image}></Image>
         </View>
         <View style={styles.info}>
-          <Text>{info}</Text>
+          <Text style={{ color: 'white', }}>{info}</Text>
         </View>
       </View>
       <View>
         <TouchableOpacity onPress={nextBtnHandle} style={{ paddingRight: 10 }}>
-          <AntDesign name="right" size={24} color="black" />
+          <AntDesign name="right" size={24} color="white" />
         </TouchableOpacity>
       </View>
     </View>
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    backgroundColor: "#F4F48F",
+    backgroundColor: "brown",
   },
 
   slider: {
@@ -87,6 +87,7 @@ const styles = StyleSheet.create({
   info: {
     marginLeft: 20,
     width: 125,
+    color: 'white',
   },
   image: {
     borderRadius: 15,

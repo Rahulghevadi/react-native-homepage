@@ -10,7 +10,7 @@ export default function Login({ navigation }) {
 
 
     <ImageBackground style={styles.backgroundImage} sizeMode='cover' source={image}>
-
+      {/* <Text style={{ alignItems: 'center', fontSize: 30, fontWeight: 'bold', color: 'white', marginBottom: 30, backgroundColor: 'rgba(101, 92, 92, 0.91)', borderRadius: 10, }}>Login To Veggies</Text> */}
       <View style={styles.loginContainer}>
       <TextInput
         style={styles.input}
