@@ -1,18 +1,16 @@
 import * as React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
-import Login from './Login';
-import Signup from './Signup';
 import Homepage from '../pages/Homepage';
 import HelpPage from '../pages/HelpPage';
 import Aboutus from '../pages/Aboutus';
 import Cart from '../pages/Cart';
 import LoginStackNavigator from './LoginStackNavigator';
-import HomeStackNavigator from './HomeStackNavigator';
 import { Ionicons } from '@expo/vector-icons';
 import PartnerLoginStack from './PartnerLoginStack';
 import IconLogo from "./IconLogo.png";
 import { Image } from 'react-native';
+// import Fruits from './Fruits';
 
 
 
@@ -24,7 +22,7 @@ export default function DrawerContainer() {
         <NavigationContainer>
             <Drawer.Navigator
                 screenOptions={{
-                    headerShown: true,
+                    headerShown: false,
                     drawerActiveBackgroundColor: 'brown',
                     drawerActiveTintColor: '#fff',
                     drawerInactiveTintColor: '#333',
@@ -46,6 +44,12 @@ export default function DrawerContainer() {
                     )
                 }} />
 
+                {/* <Drawer.Screen name="Fruits" component={Fruits} options={{
+                    drawerIcon: ({ color }) => (
+                        <Ionicons name="cart" size={25} color={color} />
+                    )
+                }} /> */}
+
                 <Drawer.Screen name="Partner Login" component={PartnerLoginStack} options={{
                     drawerIcon: ({ color }) => (
                         <Ionicons name="person-outline" size={25} color={color} />
@@ -64,6 +68,7 @@ export default function DrawerContainer() {
                         // <Ionicons name="help" size={25} color={color} />
                     )
                 }} />
+
 
             </Drawer.Navigator>
         </NavigationContainer>

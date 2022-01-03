@@ -12,10 +12,13 @@ import {
 import IconLogo from "./IconLogo.png";
 import SearchInput from "./SearchInput";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { Ionicons } from '@expo/vector-icons';
+
 
 
 const Header = ({ navigation }) => {
   return (
+
     <SafeAreaView>
       <View style={styles.container}>
         <View>
@@ -24,6 +27,8 @@ const Header = ({ navigation }) => {
         <View>
           <SearchInput />
         </View>
+        <Ionicons name="person-outline" size={25} onPress={
+          () => navigation.navigate('Login')} />
         <Icon name="shopping-cart" size={30} color="#900" onPress={
           () => navigation.navigate('Cart')
         } />

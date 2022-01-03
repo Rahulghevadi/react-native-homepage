@@ -45,7 +45,7 @@ export default function PartnerLogin({ navigation }) {
 }
 const styles = StyleSheet.create({
     loginContainer: {
-        backgroundColor: `rgba(101, 92, 92, 0.91)`,
+        backgroundColor: `gray`,
         padding: 10,
         // flex: 1,
         borderRadius: 15,

@@ -8,23 +8,13 @@ import { NavigationContainer } from "@react-navigation/native";
 
 const Stack = createNativeStackNavigator()
 
-const Homepage = () => {
+const Homepage = (props) => {
   return (
 
-    // <NavigationContainer>
-    // <Stack.Navigator>
-    //   <Stack.Screen name="Main" component={Maincontent} />
-    //   <Stack.Screen name="Header" component={Header} />
-    //   <Stack.Screen name="Slider" component={Slider} />
-
-    // </Stack.Navigator>
-    /* </NavigationContainer> */
-
-
     <SafeAreaView style={{ flex: 1, backgroundColor: "#20b2aa", }}>
-      <Header />
+      <Header navigation={props.navigation} />
       <Slider />
-      <Maincontent />
+      <Maincontent navigation={props.navigation} /> 
     </SafeAreaView>
   ); 
 };

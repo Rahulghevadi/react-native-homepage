@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import Fruits from "./fruits.png";
 import Vegetables from "./vegetables.png";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Maincontent = ({ navigation }) => {
   return (
@@ -15,6 +16,7 @@ const Maincontent = ({ navigation }) => {
             source={Fruits}
             style={{ width: 150, height: 120, borderRadius: 15, }}
           />
+
           <Text onPress={() => navigation.navigate("Fruits")} style={{ fontSize: 20 }}>Fruits </Text>
         </View>
         <View style={styles.list}>

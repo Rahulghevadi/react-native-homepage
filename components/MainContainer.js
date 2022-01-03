@@ -1,7 +1,7 @@
 // import React from "react";
 // import { StyleSheet, Text, View } from "react-native";
 
-// import { NavigationContainer } from "@react-navigation/native";
+// import { NavigationContainer, useLinkProps } from "@react-navigation/native";
 // import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 // import Ionicons from "react-native-vector-icons/Ionicons";
 
@@ -13,17 +13,18 @@
 // import DrawerContainer from "./DrawerContainer";
 // import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // import CartNavigation from "./CartNavigation";
+// import Homepage from "../pages/Homepage";
 
 // const Stack = createNativeStackNavigator();
 // const Tab = createBottomTabNavigator();
 
-// const MainContainer = () => {
+// const MainContainer = (props) => {
 //     return (
 //         <NavigationContainer>
 //             <Tab.Navigator
 //                 screenOptions={({ route }) => ({
 //                     tabBarIcon: ({ focused, color, size }) => {
-//             let iconName;
+//                         let iconName;
 
 //                         if (route.name === "HOME") {
 //                             iconName = focused ? "home" : "home-outline";
@@ -37,14 +38,14 @@
 //                     headerShown: false,
 //                     tabBarActiveTintColor: "tomato",
 //                     tabBarInactiveTintColor: "gray",
-//         })}
+//                 })}
 //             >
-//                 <Tab.Screen name="HOME" component={DrawerContainer} />
+//                 <Tab.Screen name="HOME" component={Homepage} />
 //                 <Tab.Screen name="CART" component={Cart} />
 //                 <Tab.Screen name="LOGIN" component={LoginStackNavigator} />
-//       </Tab.Navigator>
-//     </NavigationContainer>
-//   );
+//             </Tab.Navigator>
+//         </NavigationContainer>
+//     );
 // };
 
 // export default MainContainer;

@@ -109,7 +109,7 @@ const Aboutus = () => {
                                     textAlign: "center",
                                 }}
                             >
-                                contact us
+                                Contact us
                             </Text>
                         </View>
                         <View style={styles.contact}>

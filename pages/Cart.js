@@ -4,8 +4,7 @@ import Header from '../pages/Header';
 import ItemsContainer from '../pages/ItemsContainer';
 import Footer from './Footer';
 
-export default class Cart extends Component {
-  render() {
+export default function Cart() {
     return (
       <View style={{ flex: 1 }}>
         <Header />
@@ -15,7 +14,7 @@ export default class Cart extends Component {
 
     );
   }
-}
+// }
 
 
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { View, StyleSheet, ImageBackground } from "react-native";
 import { TextInput, Button } from "react-native-paper";
-import ShowHide from "./ShowHide";
 
 
 const image = { uri: 'https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80' }
@@ -38,7 +37,7 @@ export default function Signup({ navigation }) {
 
 const styles = StyleSheet.create({
   signUpContainer: {
-    backgroundColor: `rgba(101, 92, 92, 0.91)`,
+    backgroundColor: `gray`,
     padding: 10,
     // flex: 1,
     borderRadius: 15,
