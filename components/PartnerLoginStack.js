@@ -5,7 +5,7 @@ import PartnerSignup from "./PartnerSignup";
 
 const LoginStack = createNativeStackNavigator();
 
-const LoginStackNavigator = () => {
+const PartnerLoginStack = () => {
     return (
         <LoginStack.Navigator
             screenOptions={{
@@ -17,5 +17,5 @@ const LoginStackNavigator = () => {
         </LoginStack.Navigator>
     );
 };
-export default LoginStackNavigator;
+export default PartnerLoginStack;
 
