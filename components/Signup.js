@@ -26,7 +26,7 @@ export default function Signup({ navigation }) {
       <Button
         style={{ margin: 10 }}
         mode="contained"
-          onPress={() => navigation.navigate("LoginPage")}
+          onPress={() => navigation.navigate("Login")}
       >
         Signup
       </Button>

@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import Fruits from "./fruits.png";
 import Vegetables from "./vegetables.png";
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Maincontent = ({ navigation }) => {
   return (

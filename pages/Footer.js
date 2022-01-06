@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import TotalComp from './TotalComponent';
 
-const Footer = () => {
+const Footer = ({ navigation }) => {
     const {
         containerStyle,
         buttonContainerStyle,
@@ -13,7 +13,7 @@ const Footer = () => {
             <TotalComp />
             <View style={buttonContainerStyle}>
                 <View style={checkoutButtonStyle}>
-                    <Text style={{ color: 'black', fontSize: 20, }}>Go to Checkout</Text>
+                    <Text onPress={() => navigation.navigate('Address')} style={{ color: 'black', fontSize: 20, }}>Checkout</Text>
                 </View>
             </View>
         </View>

@@ -26,7 +26,7 @@ export default function PartnerLogin({ navigation }) {
                 <Button
                     style={{ margin: 10 }}
                     mode="contained"
-                    onPress={() => navigation.navigate("Home")}
+                    onPress={() => navigation.navigate("UploadProduct")}
                 >
                     Login
                 </Button>

@@ -4,12 +4,12 @@ import Header from '../pages/Header';
 import ItemsContainer from '../pages/ItemsContainer';
 import Footer from './Footer';
 
-export default function Cart() {
+export default function Cart(props) {
     return (
       <View style={{ flex: 1 }}>
         <Header />
         <ItemsContainer />
-        <Footer />
+        <Footer navigation={props.navigation} />
       </View>
 
     );
