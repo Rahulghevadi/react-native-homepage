@@ -28,13 +28,12 @@ export default function Profile() {
                             directly from the formers. No midele man's, so the we provide all in <Text style={{ fontWeight: 'bold' }}>best Price</Text>.
                         </Text>
                         <TouchableOpacity style={style.logico} onPress={() => { console.log("logout"); }}>
-                            <Entypo name="log-out" size={25}> Logout</Entypo>
+                            <Entypo name="log-out" size={25} > Logout</Entypo>
                         </TouchableOpacity>
                     </View>
                     <View style={{
                         alignItems: 'center',
-                        marginTop: 30,
-                        marginBottom: 0
+                        padding: 15
                     }}>
                         <Image source={require('../images/starico.jpg')} style={style.icons3} />
                     </View>
@@ -56,7 +55,9 @@ const style = StyleSheet.create({
         height: 500,
         width: '100%',
         borderColor: "#ffffff",
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: 14,
+        marginTop: 15
     },
 
     container1: {
@@ -118,26 +119,24 @@ const style = StyleSheet.create({
 
     about: {
         alignItems: 'center',
-        width: '100%',
-        margin: 20,
+        padding: 15,
         textAlign: 'center'
     },
 
     logico: {
-        textAlign: 'center',
         fontSize: 12,
+        margin: 10
     },
 
     icons3: {
         height: 30,
         width: 26,
-        marginBottom: 15
+        padding: 10
     },
     ratingcont: {
-        width: 300,
-        height: 200,
         borderWidth: 1,
         borderColor: 'gray',
+        padding: 15
     },
 
 });
