@@ -6,7 +6,7 @@ import HelpPage from '../pages/HelpPage';
 import Aboutus from '../pages/Aboutus';
 import Cart from '../pages/Cart';
 import LoginStackNavigator from './LoginStackNavigator';
-import { Ionicons } from '@expo/vector-icons';
+import { AntDesign, Ionicons } from '@expo/vector-icons';
 import PartnerLoginStack from './PartnerLoginStack';
 import IconLogo from "./IconLogo.png";
 import { Image } from 'react-native';
@@ -44,7 +44,7 @@ export default function DrawerContainer(props) {
 
             <Drawer.Screen name="Profile" component={Profile} options={{
                 drawerIcon: ({ color }) => (
-                    <Ionicons name="home" size={25} color={color} />
+                    <AntDesign name="profile" size={25} color={color} />
                 )
             }} />
 
