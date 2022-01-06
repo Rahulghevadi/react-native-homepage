@@ -203,7 +203,7 @@ export default Aboutus;
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
+        padding: 40,
         // backgroundColor: "#f6f6f6",
     },
     steps: {
