@@ -48,11 +48,11 @@ export default function DrawerContainer(props) {
                 )
             }} />
 
-            <Drawer.Screen name="Login" component={LoginStackNavigator} options={{
+            {/* <Drawer.Screen name="Login" component={LoginStackNavigator} options={{
                 drawerIcon: ({ color }) => (
                     <Ionicons name="person-outline" size={25} color={color} />
                 )
-            }} />
+            }} /> */}
 
 
             <Drawer.Screen name="Partner Login" component={PartnerLoginStack} options={{
