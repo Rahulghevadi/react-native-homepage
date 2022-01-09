@@ -1,21 +1,11 @@
 import * as React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer, useLinkProps } from '@react-navigation/native';
-import Homepage from '../pages/Homepage';
 import HelpPage from '../pages/HelpPage';
 import Aboutus from '../pages/Aboutus';
-import Cart from '../pages/Cart';
-import LoginStackNavigator from './LoginStackNavigator';
 import { AntDesign, Ionicons } from '@expo/vector-icons';
 import PartnerLoginStack from './PartnerLoginStack';
 import IconLogo from "./IconLogo.png";
 import { Image } from 'react-native';
-import Fruits from './Fruits';
-// import DetailsScreen from './FruitsDetails';
-// import DetailsStack from './DetailsStack';
-import Address from './Address';
-// import StripeApp from './StripeApp';
-import Home from './Home';
 import HomeStackNavigator from './HomeStackNavigator';
 import Profile from './Profile';
 
