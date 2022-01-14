@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, StyleSheet, Text } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { Feather } from 'react-native-vector-icons';
+import { Feather as Mgs } from 'react-native-vector-icons';
 import { Entypo, AntDesign } from '@expo/vector-icons'
 import { TouchableOpacity } from 'react-native';
 import Rating from './Rating'
@@ -12,7 +12,7 @@ export default function Profile() {
             <View style={style.container1}>
                 <Image source={require('../images/penico.jpg')} style={style.icons} />
                 <Text style={style.title}>Profile</Text>
-                <Feather name="message-square" size={25} style={style.icons1} />
+                <Mgs name="message-square" size={25} style={style.icons1} />
             </View>
             <View style={{ padding: 7, alignItems: 'center' }}>
                 <Image source={{ uri: "https://media.gqindia.com/wp-content/uploads/2018/05/26-866x956.jpg" }} style={style.userImage} />
@@ -35,7 +35,7 @@ export default function Profile() {
                         alignItems: 'center',
                         padding: 15
                     }}>
-                        <Image source={require('../images/starico.jpg')} style={style.icons3} />
+                        {/* <Image source={require('../images/starico.jpg')} style={style.icons3} /> */}
                     </View>
                     <View style={style.ratingcont}>
                         <Rating />
@@ -125,7 +125,8 @@ const style = StyleSheet.create({
 
     logico: {
         fontSize: 12,
-        margin: 10
+        margin: 35,
+        alignItems: "center"
     },
 
     icons3: {
