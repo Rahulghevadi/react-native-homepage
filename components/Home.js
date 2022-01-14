@@ -6,7 +6,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
-import COLORS from '../src/const/color';
 
 
 import Fruits from "./fruits.png";
@@ -43,7 +42,7 @@ const Home = ({ navigation }) => {
         });
     };
     return (
-        <SafeAreaView>
+        <SafeAreaView style={{ paddingBottom: 30, }} >
 
 
             {/* Header content */}
@@ -124,9 +123,9 @@ const styles = StyleSheet.create({
         // backgroundColor: "#20b2aa",
         height: 100,
         flexDirection: "row",
-        paddingTop: 50,
-        padding: 20,
-        marginTop: 10,
+        paddingTop: -30,
+        padding: 10,
+        // marginTop: 10,
         alignItems: "center",
         justifyContent: "space-between",
     },
